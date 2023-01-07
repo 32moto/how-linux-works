@@ -1,4 +1,4 @@
-FROM amd64/ubuntu:20.04
+FROM ubuntu:latest
 
 RUN apt-get update
 
@@ -26,8 +26,9 @@ RUN apt-get install -y \
     jq \
     docker.io \
     containerd \
-    libvirt-daemon-system
+    libvirt-daemon-system \
+    strace
 
-RUN adduser `id -un` libvirt
-RUN adduser `id -un` libvirt-qemu
-RUN adduser `id -un` kvm
+RUN adduser `id -un` libvirt && \
+    adduser `id -un` libvirt-qemu && \
+    adduser `id -un` kvm

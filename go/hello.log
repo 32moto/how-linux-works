@@ -1,0 +1,775 @@
+execve("./hello", ["./hello"], 0xfffff27c5ce0 /* 13 vars */) = 0
+mmap(NULL, 344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e7b2000
+set_tid_address(0x4ed240)               = 37
+brk(NULL)                               = 0x302cb000
+brk(0x302cd000)                         = 0x302cd000
+mmap(0x302cb000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x302cb000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e7b1000
+rt_sigprocmask(SIG_SETMASK, ~[ILL FPE SEGV RTMIN RT_1 RT_2], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+mmap(NULL, 143360, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e78e000
+mprotect(0xffff8e790000, 135168, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], ~[ILL FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+clone(child_stack=0xffff8e7b0a70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[38], tls=0xffff8e7b0b70, child_tidptr=0x4ed240) = 38
+rt_sigprocmask(SIG_SETMASK, ~[ILL FPE KILL SEGV STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e78d000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e78b000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e78a000
+mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e785000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e784000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e783000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e782000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e781000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e780000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e77e000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e77d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e77c000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e77b000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e77a000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e779000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e777000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e775000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e773000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e771000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e76f000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e76d000
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+uname({sysname="Linux", nodename="7149efcb1438", ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\2\0>\0\1\0\0\0\300ME\0\0\0\0\0"..., 64) = 64
+lseek(3, 0, SEEK_SET)                   = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e76c000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e76b000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e76a000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e769000
+brk(0x302ce000)                         = 0x302ce000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e768000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e767000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e766000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e764000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e762000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e761000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e75f000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e75e000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e75c000
+munmap(0xffff8e761000, 4096)            = 0
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e758000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e754000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e752000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e750000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e74e000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e74a000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e748000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e746000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e744000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e742000
+brk(0x302cf000)                         = 0x302cf000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e740000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e73e000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e73a000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e736000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e734000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e732000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e730000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e72c000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e728000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e726000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e722000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e720000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e718000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e716000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e712000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e70e000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e70c000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e761000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e70a000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e708000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e707000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e703000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6fb000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6f7000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6f5000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6f3000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6f2000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6f1000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6ed000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e6eb000
+brk(0x302d0000)                         = 0x302d0000
+mmap(NULL, 524356, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e66a000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e668000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e667000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e665000
+munmap(0xffff8e667000, 4096)            = 0
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e661000
+munmap(0xffff8e665000, 8192)            = 0
+sysinfo({uptime=433239, loads=[28768, 21664, 15712], totalram=8337670144, freeram=134418432, sharedram=255897600, bufferram=376303616, totalswap=2147479552, freeswap=2002964480, procs=719, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86661000
+madvise(0xffff86661000, 134217728, MADV_HUGEPAGE) = 0
+mprotect(0xffff86661000, 134213632, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap(NULL, 45056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86656000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8664e000
+getrandom(NULL, 0, 0)                   = 0
+openat(AT_FDCWD, "/proc/sys/vm/mmap_min_addr", O_RDONLY|O_LARGEFILE) = 4
+read(4, "32768\n", 1024)                = 6
+lseek(4, -1, SEEK_CUR)                  = 5
+close(4)                                = 0
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86647000
+gettid()                                = 37
+fstat(3, {st_mode=S_IFREG|0755, st_size=2008801, ...}) = 0
+geteuid()                               = 0
+getegid()                               = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\2\0>\0\1\0\0\0\300ME\0\0\0\0\0"..., 1024) = 1024
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_LARGEFILE) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+readv(4, [{iov_base="00200000-002b5000 r--p 00000000 "..., iov_len=4095}, {iov_base="", iov_len=1024}], 2) = 1161
+readv(4, [{iov_base="", iov_len=2934}, {iov_base="", iov_len=1024}], 2) = 0
+close(4)                                = 0
+brk(NULL)                               = 0x302d0000
+mmap(0x4ef000, 18333696, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4ef000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86640000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86639000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86632000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8662b000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86624000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8661d000
+mmap(0x4ef000, 577536, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0x4ef000
+mmap(0x57c000, 770048, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x8d000) = 0x57c000
+mmap(0x638000, 86016, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x149000) = 0x638000
+mmap(0x64d000, 122880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x64d000
+close(3)                                = 0
+mmap(0x40000ef000, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x40000ef000
+mmap(0x40000ef000, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x40000ef000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86616000
+mmap(NULL, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86602000
+mprotect(0x40000ef000, 4096, PROT_NONE) = 0
+getrandom("\x13\xcf\x15\x86\xc6\x71\x04\x5d\xaf\xf6\x23\x7d\x9b\x82\x47\x29", 16, 0) = 16
+getuid()                                = 0
+geteuid()                               = 0
+getgid()                                = 0
+getegid()                               = 0
+munmap(0x66b000, 16777216)              = 0
+munmap(0xffff8e76d000, 8192)            = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8e76d000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTRAP, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+rt_sigaction(SIGABRT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGKILL, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = -1 EINVAL (Invalid argument)
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTKFLT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGVTALRM, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPROF, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPWR, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSYS, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_3, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_4, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_5, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_6, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_7, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_8, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_9, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_10, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_11, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_12, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_13, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_14, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_15, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_16, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_17, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_18, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_19, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_20, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_21, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_22, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_23, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_24, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_25, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_26, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_27, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_28, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_29, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_30, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_31, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_32, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+mmap(0x40008f0000, 4096, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x40008f0000
+mmap(0x40008f0000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x40008f0000
+mmap(0x40008f1000, 4096, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x40008f1000
+mmap(0x40008f1000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x40008f1000
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff865f9000
+sched_getaffinity(0, 8192, [0, 1, 2, 3]) = 8
+faccessat(AT_FDCWD, "/usr/gnemul/qemu-x86_64/sys/kernel/mm/transparent_hugepage/hpage_pmd_size", F_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/kernel/mm/transparent_hugepage/hpage_pmd_size", O_RDONLY) = 3
+read(3, "2097152\n", 20)                = 8
+close(3)                                = 0
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff865f1000
+mmap(0x40008f2000, 262144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x40008f2000
+mmap(0x40008f2000, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x40008f2000
+mmap(0xc0000ef000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xc0000ef000
+mmap(0xc0000ef000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc0000ef000
+mmap(NULL, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff865dd000
+mmap(NULL, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff865c9000
+mmap(NULL, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff865b5000
+mmap(NULL, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff865a1000
+mmap(NULL, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86581000
+mmap(0xc0000ef000, 67108864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc0000ef000
+mmap(0x4000932000, 33554432, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4000932000
+mmap(0x4000932000, 33554432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x4000932000
+mmap(NULL, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86561000
+mmap(NULL, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86541000
+mmap(0x4002932000, 2166784, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4002932000
+mmap(0x4002932000, 2166784, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x4002932000
+mmap(0x4002b43000, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4002b43000
+mmap(0x4002b43000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x4002b43000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86539000
+mmap(0x4002b53000, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4002b53000
+mmap(0x4002b53000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x4002b53000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86531000
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86528000
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8651f000
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86516000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8650f000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86507000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff864ff000
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+gettid()                                = 37
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGILL, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGTRAP, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP RTMIN RT_1 RT_2], 8) = 0
+rt_sigaction(SIGABRT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGFPE, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGUSR1, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGUSR2, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGSTKFLT, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGURG, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGXCPU, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGVTALRM, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGPROF, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGIO, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGPWR, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGSYS, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_5, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_6, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_7, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_8, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_9, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_10, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_11, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_12, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_13, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_14, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_15, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_16, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_17, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_18, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_19, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_20, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_21, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_22, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_23, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_24, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_25, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_26, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_27, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_28, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_29, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_30, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_31, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGRT_32, {sa_handler=0x37f1e0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x44e614}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff864f7000
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[BUS KILL SEGV STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff864f0000
+mmap(NULL, 45056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff864e5000
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], ~[BUS KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+mmap(NULL, 274432, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff864a2000
+mprotect(0xffff864a4000, 266240, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], ~[KILL STOP RTMIN RT_1 RT_2], 8) = 0
+clone(child_stack=0xffff864e4a70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[39], tls=0xffff864e4b70, child_tidptr=0x4ed240) = 39
+rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[BUS KILL SEGV STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+futex(0xffffd5d2ffac, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0xffffd5d2ff54, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x4ea1d4, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xffffd5d31164, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xffff864e48a4, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4ce2f4, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x4e9824, FUTEX_WAIT_PRIVATE, 2147483664, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[BUS KILL SEGV STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+mmap(NULL, 45056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff86497000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8648f000
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], ~[BUS KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+mmap(NULL, 274432, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8644c000
+mprotect(0xffff8644e000, 266240, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], ~[KILL STOP RTMIN RT_1 RT_2], 8) = 0
+clone(child_stack=0xffff8648ea70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[40], tls=0xffff8648eb70, child_tidptr=0x4ed240) = 40
+rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[BUS KILL SEGV STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+futex(0xffffd5d2ffac, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0xffffd5d2ff54, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x4ea1d4, FUTEX_WAKE_PRIVATE, 1)  = 1
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+futex(0xc0001234c8, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4e9824, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x4e9824, FUTEX_WAIT_PRIVATE, 2147483664, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xc0001234c8, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0xc0001234c8, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff863f6000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff863ee000
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff863e6000
+readlinkat(AT_FDCWD, "hello", 0xffffd5d2ef58, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/workspace/go", 4097)           = 14
+futex(0x64cab0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x64c9b0, FUTEX_WAKE_PRIVATE, 1)  = 1
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff863de000
+futex(0xc0001234c8, FUTEX_WAKE_PRIVATE, 1) = 1
+fcntl(0, F_GETFL)                       = 0x20002 (flags O_RDWR|O_LARGEFILE)
+futex(0xc0001234c8, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(0x4002b63000, 262144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4002b63000
+mmap(0x4002b63000, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x4002b63000
+fcntl(1, F_GETFL)                       = 0x20002 (flags O_RDWR|O_LARGEFILE)
+fcntl(2, F_GETFL)                       = 0x20002 (flags O_RDWR|O_LARGEFILE)
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff863d6000
+write(1, "hello world\n", 12)           = 12
+exit_group(0)                           = ?
++++ exited with 0 +++

@@ -3,8 +3,8 @@ services:
   workspace:
     build:
       dockerfile: Dockerfile
+    working_dir: /workspace
     volumes:
       - .:/workspace
-    working_dir: /workspace
     tty: true
     stdin_open: true
