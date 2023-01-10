@@ -11,6 +11,10 @@ RUN apt-get install -y locales && \
     echo "export LANG=ja_JP.UTF-8" >> ~/.bashrc
 
 RUN apt-get install -y \
+    strace \
+    psmisc
+
+RUN apt-get install -y \
     binutils \
     build-essential \
     golang \
@@ -26,8 +30,7 @@ RUN apt-get install -y \
     jq \
     docker.io \
     containerd \
-    libvirt-daemon-system \
-    strace
+    libvirt-daemon-system
 
 RUN adduser `id -un` libvirt && \
     adduser `id -un` libvirt-qemu && \
