@@ -12,7 +12,8 @@ RUN apt-get install -y locales && \
 
 RUN apt-get install -y \
     strace \
-    psmisc
+    psmisc \
+    man
 
 RUN apt-get install -y \
     binutils \
